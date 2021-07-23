@@ -1,0 +1,41 @@
+/*Estilização da tabela de usuários*/
+/*Estlização linha*/
+li {
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    height: 100px;
+    background: linear-gradient(
+        180deg
+        , rgba(57,58,94,1) 0%, rgba(40,42,63,1) 100%);;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    font-weight: bold;
+}
+
+/*Estilização divisões dentro da linha*/
+li .users {
+    display: flex;
+    align-items: center;
+}
+
+li img {
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 75px;
+}
+
+li .dadosUsuario {
+    display: flex;
+}
+
+button {
+    background-color: white;
+    border-style: none;
+    border-radius: 5%;
+    margin-right: 20px;
+    font-weight: bold;
+}
