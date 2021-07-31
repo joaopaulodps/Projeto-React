@@ -13,12 +13,14 @@ li {
     color: white;
     align-items: center;
     font-weight: bold;
+    cursor: default;
+    
 }
 
 /*Estilização divisões dentro da linha*/
 li .users {
     display: flex;
-    align-items: center;
+    align-items: center;    
 }
 
 li img {
@@ -34,8 +36,101 @@ li .dadosUsuario {
 
 button {
     background-color: white;
-    border-style: none;
+    border-style: solid;
+    border-width: 0.5px;
     border-radius: 5%;
     margin-right: 20px;
     font-weight: bold;
+    cursor: pointer;
+}
+
+/*Modal de pagamento e seus itens*/
+.modalPagamento {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    width: 80%;
+    height: 300px;
+    position: fixed;
+    left: 10%;
+    top: 20%;
+    background-color: white;
+    display: none;
+    max-width: 390px;
+}
+
+.titulo {
+    background-color: rgba(57,58,94,1);
+    color: white;
+    height: 60px;
+    display: flex;
+}
+
+.cabecalho {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    
+}
+
+.selectUsuario {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.valorTransf {
+    width:80%;
+    height:32px;
+    font-size:20px; 
+    border-radius:5px;
+    border-color:rgb(177, 174, 174)
+}
+
+.selecionaCartao {
+    width:80%;
+    height:32px;
+    font-size:20px; 
+    border-radius:5px;
+    border-color:rgb(177, 174, 174);
+    margin-top: 3vh
+}
+
+.botaoEnviar {
+    width: 30%;
+    height: 32px;
+    font-size: 20px;
+    margin-top: 5vh
+}
+
+/*Modal de resultado da transferência*/
+.modalResult {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    width: 340px;
+    height: 200px;
+    position: fixed;
+    left: 10%;
+    top: 20%;
+    background-color: white;
+    display: none;
+    max-width: 340px;
+
+}
+
+.resultTransacao {
+    display: flex;
+    padding-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
 }
